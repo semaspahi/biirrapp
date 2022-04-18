@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="beer"
+            type="com.sema.base.data.model.Beer" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_snow"
+        tools:context=".ui.beer.BeerFragment">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_snow"
+                app:navigationIcon="@drawable/ic_back" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageThumb"
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appbar"
+            app:showUrl="@{beer.imageUrl}" />
+
+        <TextView
+            android:id="@+id/beer_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/margin_xlarge"
+            android:text="@{beer.name}"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_semibold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageThumb" />
+
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_xlarge"
+            android:layout_marginEnd="@dimen/margin_xlarge"
+            android:alpha="0.3"
+            android:fontFamily="@font/poppins_medium"
+            android:lineSpacingExtra="5dp"
+            android:paddingBottom="8dp"
+            android:text="@{beer.tagline}"
+            android:textColor="@color/dark_gray"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/beer_name" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ibu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xlarge"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tagline">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/beer_detail_ibu"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/gray_"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                ibu="@{beer.ibu}"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginLeft="@dimen/margin_half"
+                android:paddingStart="12dp"
+                android:gravity="center"
+                android:paddingEnd="12dp"
+                android:background="@drawable/rounded_yellow_color"
+                android:textColor="@color/white"
+                tools:text="12"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/beer_detail_abv"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginLeft="@dimen/margin_half"
+                android:textColor="@color/gray_"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                abv="@{beer.abv}"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginLeft="@dimen/margin_half"
+                android:paddingStart="12dp"
+                android:gravity="center"
+                android:paddingEnd="12dp"
+                android:background="@drawable/rounded_yellow_line"
+                android:textColor="@color/yellow"
+                tools:text="12"
+                android:textSize="13sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xlarge"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:alpha="0.5"
+            android:fontFamily="@font/poppins_medium"
+            android:lineSpacingExtra="5dp"
+            android:paddingBottom="8dp"
+            android:text="@{beer.description}"
+            android:textColor="@color/dark_gray"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibu_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

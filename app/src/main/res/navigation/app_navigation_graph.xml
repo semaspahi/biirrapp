@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation_graph"
+    app:startDestination="@id/fragment_beer">
+
+    <fragment
+        android:id="@+id/fragment_beer"
+        android:name="com.sema.biirrapp.ui.beer.BeerFragment"
+        android:label="fragment_beer"
+        tools:layout="@layout/beer_fragment">
+
+        <action
+            android:id="@+id/action_beerList_to_beerDetail"
+            app:destination="@id/fragment_beer_detail"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_beer_detail"
+        android:name="com.sema.biirrapp.ui.beerdetail.BeerDetailFragment"
+        android:label="fragment_beer_detail"
+        tools:layout="@layout/beer_fragment" >
+
+        <argument
+            android:name="beerId"
+            app:argType="integer" />
+    </fragment>
+</navigation>
