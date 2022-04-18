@@ -1,11 +1,12 @@
 # birrapp
 Finding the perfect biirr
 
-![Screenshot_20220418-015720](https://user-images.githubusercontent.com/5040186/163737705-0501e203-87af-4b63-b0b0-531935ce2d40.png)
-![Screenshot_20220418-015727](https://user-images.githubusercontent.com/5040186/163737707-356fd38d-4ab7-44c0-9c89-5ac91aaf48ac.png)
+<img width="276" alt="Screen Shot 2022-04-18 at 03 52 08" src="https://user-images.githubusercontent.com/5040186/163738854-3ca60004-65a3-4bdb-ad45-40ea4c3c1773.png">
+<img width="277" alt="Screen Shot 2022-04-18 at 03 52 28" src="https://user-images.githubusercontent.com/5040186/163738850-3e328afd-3578-4654-a1f0-985d4d7f9628.png">
 
 
-This App Uses
+# This App Uses
+
 * Kotlin
 * MVVM
 * Hilt
@@ -19,3 +20,9 @@ This App Uses
 * Navigation Component
 * Navigation Safe Args
 * Android Lifecycle Extension
+
+# DOWNLOAD
+
+Navigate to <a href="https://github.com/semaspahi/biirrapp/releases">Releases</a> and download the latest apk.
+
+Note: In this project was used a free api which has request/rate limit.
