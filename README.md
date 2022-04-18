@@ -1,8 +1,7 @@
-# birrapp
+# Biirr App
 Finding the perfect biirr
 
-<img width="276" alt="Screen Shot 2022-04-18 at 03 52 08" src="https://user-images.githubusercontent.com/5040186/163738854-3ca60004-65a3-4bdb-ad45-40ea4c3c1773.png">
-<img width="277" alt="Screen Shot 2022-04-18 at 03 52 28" src="https://user-images.githubusercontent.com/5040186/163738850-3e328afd-3578-4654-a1f0-985d4d7f9628.png">
+<img width="617" alt="Screen Shot 2022-04-18 at 04 21 58" src="https://user-images.githubusercontent.com/5040186/163740248-c30e2014-d1a2-4222-8b89-2a7e83ee0595.png">
 
 
 # This App Uses
