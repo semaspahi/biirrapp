@@ -1,6 +1,8 @@
 # Biirr App
 Finding the perfect biirr
 
+Check this <a href="https://github.com/semaspahi/biirrapp-jetpack-compose">link</a> for jetpack compose version
+
 <img width="617" alt="Screen Shot 2022-04-18 at 04 21 58" src="https://user-images.githubusercontent.com/5040186/163740248-c30e2014-d1a2-4222-8b89-2a7e83ee0595.png">
 
 
